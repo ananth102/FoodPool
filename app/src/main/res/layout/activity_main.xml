@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.apps.fazbear.foodpool.MainActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose what kind of entree you want"
+        android:id="@+id/ask"
+        android:textSize="20dp"
+        android:textColor="@android:color/background_light"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sandwich"
+        android:id="@+id/sandwhichCheckBox"
+        android:layout_below="@id/ask"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger"
+        android:layout_below="@id/sandwhichCheckBox"
+        android:id="@+id/burger"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose which condiments"
+        android:layout_below="@id/burger"
+        android:id="@+id/condiments"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lettuce"
+        android:id="@+id/lettuce"
+        android:textSize="30dp"
+        android:layout_below="@+id/condiments"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tomato"
+        android:id="@+id/tomato"
+        android:layout_below="@id/lettuce"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mayo"
+        android:id="@+id/mayo"
+        android:layout_below="@id/tomato"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mustard"
+        android:id="@+id/mustard"
+        android:layout_below="@id/mayo"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pickles"
+        android:id="@+id/pickles"
+        android:layout_below="@id/mustard"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="onion"
+        android:id="@+id/onion"
+        android:layout_below="@id/pickles"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a side"
+        android:id="@+id/sides"
+        android:textSize="25dp"
+        android:layout_below="@+id/onion"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fries"
+        android:layout_below="@id/sides"
+        android:id="@+id/fries"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salad"
+        android:layout_below="@id/fries"
+        android:id="@+id/salad"
+        android:textSize="30dp"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calcP"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/calcP"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="50dp"/>
+
+    <Button
+        android:id="@+id/calcP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Price"
+        android:layout_above="@+id/totalCost"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Checkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/totalCost"
+        android:layout_alignStart="@+id/totalCost"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/Checkout"
+        android:onClick="checkOut"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tomato"
+        android:layout_toEndOf="@+id/calcP"
+        android:layout_marginStart="8dp"
+        android:id="@+id/textView" />
+
+    <CheckBox
+        android:text="Special Free Lunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ask"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/free"
+        android:textColor="@android:color/background_light" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/amount"
+        android:layout_below="@id/calcP"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

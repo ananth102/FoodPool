@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "256428765672",
+    "firebase_url": "https://foodpool-5b295.firebaseio.com",
+    "project_id": "foodpool-5b295",
+    "storage_bucket": "foodpool-5b295.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256428765672:android:1ee2bca3b77d45f1",
+        "android_client_info": {
+          "package_name": "com.apps.fazbear.foodpool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "256428765672-1uk0fcs6un0q4ldkaam99utvrb98i754.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSj5fqNzJWPRkmP29JnFhasw0vFaXqAXM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
